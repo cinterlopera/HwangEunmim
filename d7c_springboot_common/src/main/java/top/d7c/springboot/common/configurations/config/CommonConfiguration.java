@@ -6,7 +6,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 
-import top.d7c.plugins.core.context.D7cApplicationObjectSupport;
 import top.d7c.springboot.common.actuator.endpoint.CustomEndPoint;
 
 /**
@@ -22,10 +21,10 @@ public class CommonConfiguration {
     /**
      * 初始化  org.springframework.context.ApplicationContext
      */
-    @Bean("d7cApplicationObjectSupport")
+    /*@Bean("d7cApplicationObjectSupport")
     public D7cApplicationObjectSupport d7cApplicationObjectSupport() {
         return new D7cApplicationObjectSupport();
-    }
+    }*/
 
     /**
      * 自定义监控端点。
